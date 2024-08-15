@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content=""/>
+        <title> </title>
+        <style>
+            
+        div{
+            background-color:black;
+            width:900px;
+            height:600px;
+            border-top-right-radius:60px;
+            border-top-left-radius:60px;
+            border-bottom-right-radius:60px;
+            border-bottom-left-radius:60px;
+            align-items:center;
+            align-self:center;
+            align-content:center;
+            color:white;
+            font-weight:bolder;
+            text-align:center;
+            text-overflow:clip;
+            font-size:100px;
+        }
+        
+        button{
+            background-color:red;
+            color:white;
+            width:200px;
+            height:100px;
+            border-top-right-radius:80px;
+            border-top-left-radius:80px;
+            border-bottom-right-radius:80px;
+            border-bottom-left-radius:80px;
+            font-size:50px;
+        }
+        
+        #btnw{
+            
+        background-color:gold;
+        width:300px;
+        height:100px;
+        border-top-right-radius:20px;
+        border-top-left-radius:20px;
+        border-bottom-right-radius:20px;
+        border-bottom-left-radius:20px;
+        
+        }
+        
+        
+        a{
+            
+        color:black;
+        font-weight:bolder;
+        }
+        </style>
+    </head>
+    <body>
+     
+
+<div id = "user-interface">
+    
+    <p id = "withdraw-btn"></p>
+
+</div>
+    
+<br></br><br></br>
+    <button  onclick = "btnOne()" value = "1" id = "one">1</button></button>
+    <button onclick = "btnTwo()" value = "2" id = "two">2</button>
+    <button onclick = "btnThree()" value = "3" id = "three">3</button>
+    <button onclick = "btnFour()" value = "4" id = "four">4</button> 
+    
+    <br></br>
+    
+    <button onclick = "btnFive()" value = "5" id = "five">5</button>
+    <button onclick = "btnSix()" value = "6" id = "six">6</button>
+    <button onclick = "btnSeven()" value = "7" id = "seven">7</button>
+    <button onclick = "btnEight()" value = "8" id = "eight">8</button>
+        
+    <br></br>
+        
+    <button onclick = "btnNine()" value = "9" id = "nine">9</button>
+    <button onclick = "btnZero()" value = "0" id = "zero">0</button>
+        
+
+     <br></br>
+         
+<script>
+    const displayInterface = document.querySelector("#user-interface");
+    var btn1 = document.querySelector("#one").value;
+    const buttonFive = document.querySelector("#five").value;
+    const fundsRequest = document.querySelector("#withdraw-btn");
+    
+   displayInterface.innerHTML = `<p>Click your lucky number and win </p>` ;
+   
+
+    
+    function btnOne(){
+       var luckyNumber = Math.floor(Math.random() * 170 + 1);
+            
+        if(luckyNumber==1){
+            
+            displayInterface.innerHTML = "YOU WIN" + luckyNumber + `<br></br>`+`<button id = "btnw" ><a href = "withdraw.html">WITHDRAW</a></button>`;
+        window.location.href = "rollNumbers5.html>";                
+                    
+        }else if(luckyNumber != 1){  
+        window.location.href = "consolidation.html";
+         }   
+       
+    }
+    
+    
+    
+    
+    function btnTwo(){
+       var luckyNumber = Math.floor(Math.random() * 108 + 1);
+            
+        if(luckyNumber==2){
+            
+         displayInterface.innerHTML = "YOU WIN" + luckyNumber + `<br></br>`+`<button id = "btnw" ><a href = "withdraw.html">WITHDRAW</a></button>`;
+        window.location.href = "rollNumbers5.html";                
+                               
+        
+        }else if(luckyNumber != 2 ){displayInterface.innerHTML = " YOU LOOSE BUY ANOTHER TICKET AND REPLAY" + luckyNumber;
+                   window.location.href = "consolidation.html";
+                
+        }
+    
+    }
+
+    
+    function btnThree(){
+       var luckyNumber = Math.floor(Math.random() * 160 + 1);
+            
+        if(luckyNumber==3){
+            
+        displayInterface.innerHTML = "YOU WIN" + luckyNumber + `<br></br>`+`<button id = "btnw" ><a href = "withdraw.html">WITHDRAW</a></button>`;
+        window.location.href = "rollNumbers5.html";                
+                                
+        
+        }else if(luckyNumber != 3 ){displayInterface.innerHTML = " YOU LOOSE BUY ANOTHER TICKET AND REPLAY" + luckyNumber;
+                window.location.href = "consolidation.html";
+                
+          }
+    
+    }
+    
+    
+    
+   function btnFour(){
+      var luckyNumber = Math.floor(Math.random() * 160 + 1);
+           
+       if(luckyNumber==4){
+            
+        displayInterface.innerHTML = "YOU WIN" + luckyNumber + `<br></br>`+`<button id = "btnw" ><a href = "withdraw.html">WITHDRAW</a></button>`;
+        window.location.href = "rollNumbers5.html";                
+                               
+        
+       }else if(luckyNumber != 4 ){displayInterface.innerHTML = " YOU LOOSE BUY ANOTHER TICKET AND REPLAY" + luckyNumber;
+               window.location.href = "consolidation.html";
+               
+         }
+    
+        }
+   
+    
+    function btnFive(){
+        var luckyNumber = Math.floor(Math.random() * 160 + 1);
+            
+        if(luckyNumber==buttonFive){
+            
+        displayInterface.innerHTML = "YOU WIN" + luckyNumber + `<br></br>`+`<button id = "btnw" ><a href = "withdraw.html">WITHDRAW</a></button>`;
+                        
+        window.location.href = "rollNumbers5.html";                
+                
+        }else if(luckyNumber != buttonFive){displayInterface.innerHTML = " YOU LOOSE BUY ANOTHER TICKET AND REPLAY" + luckyNumber; 
+                window.location.href = "consolidation.html";
+                
+         }
+    
+    }
+    
+    
+    
+    
+    function btnSix(){
+        var luckyNumber = Math.floor(Math.random() * 150 + 1);
+            
+        if(luckyNumber==6){
+            
+         displayInterface.innerHTML = "YOU WIN" + luckyNumber + `<br></br>`+`<button id = "btnw" ><a href = "withdraw.html">WITHDRAW</a></button>`;
+                        
+        window.location.href = "rollNumbers5.html";                
+                
+        }else if(luckyNumber != 6 ){displayInterface.innerHTML = " YOU LOOSE BUY ANOTHER TICKET AND REPLAY" + luckyNumber;
+                window.location.href = "consolidation.html";
+                
+          }
+    
+    }
+    
+    
+    
+    
+    function btnSeven(){
+        var luckyNumber = Math.floor(Math.random() * 140 + 1);
+            
+        if(luckyNumber==7){
+            
+        displayInterface.innerHTML = "YOU WIN" + luckyNumber + `<br></br>`+`<button id = "btnw" ><a href = "withdraw.html">WITHDRAW</a></button>`;
+        
+        window.location.href = "rollNumbers5.html";                
+        
+        }else if(luckyNumber != 7 ){displayInterface.innerHTML = " YOU LOOSE BUY ANOTHER TICKET AND REPLAY" + luckyNumber;
+                window.location.href = "consolidation.html";
+                
+          }
+    
+    }
+    
+    
+    
+    
+    
+    function btnEight(){
+        var luckyNumber = Math.floor(Math.random() * 160 + 1);
+            
+        if(luckyNumber==8){
+            
+        displayInterface.innerHTML = "YOU WIN" + luckyNumber + `<br></br>`+`<button id = "btnw" ><a href = "withdraw.html">WITHDRAW</a></button>`;
+                        
+                window.location.href = "rollNumbers5.html";                
+                
+        }else if(luckyNumber != 8){displayInterface.innerHTML = " YOU LOOSE BUY ANOTHER TICKET AND REPLAY" + luckyNumber;
+              window.location.href = "consolidation.html";
+                
+          }
+    
+    }
+    
+    
+    
+    
+    function btnNine(){
+        var luckyNumber = Math.floor(Math.random() * 160 + 1);
+            
+        if(luckyNumber==9){
+             
+                    
+         displayInterface.innerHTML = "YOU WIN" + luckyNumber + `<br></br>`+`<button id = "btnw" ><a href = "withdraw.html">WITHDRAW</a></button>`;
+                        
+         window.location.href = "rollNumbers5.html";                
+                
+        }else if(luckyNumber != 9 ){ displayInterface.innerHTML = " YOU LOOSE BUY ANOTHER TICKET AND REPLAY" + luckyNumber;
+                window.location.href = "consolidation.html";
+                
+         }
+    
+    }
+    
+    
+    
+    function btnZero(){
+       var luckyNumber = Math.floor(Math.random() * 180 + 1);
+            
+        
+    
+        if(luckyNumber==0){
+            
+        displayInterface.innerHTML = "YOU WIN" + luckyNumber + `<br></br>`+`<button id = "btnw" ><a href = "withdraw.html">WITHDRAW</a></button>`;
+        window.location.href = "rollNumbers5.html";                
+                                
+        
+        }else if(luckyNumber != 0 ){displayInterface.innerHTML = " YOU LOOSE BUY ANOTHER TICKET AND REPLAY" + luckyNumber;
+                window.location.href = "consolidation.html";
+                
+         }
+    
+    }
+    
+    
+    
+  function test(){
+     var a = 20;
+      var c = 200;
+      
+      alert(a*c);
+  
+  }
+    
+    
+    
+    
+    
+</script>
+    </body>
+</html>
+    
